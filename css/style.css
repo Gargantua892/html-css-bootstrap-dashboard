@@ -1,0 +1,48 @@
+/* [class*="col"]{
+    background-color: rgba(137, 43, 226, 0.499);
+    border: 1px solid #000;
+    min-height: 100px;
+} */
+
+body{
+    height: 100vh;
+}
+
+main, #dashboard-content{
+    height: calc(100vh - 54px);
+}
+
+
+.icon-container.d-flex i {
+    padding: 0px 6px;
+};
+
+input.form-control.me-2 {
+    background-color: lightgray;
+}
+
+#sidebar{
+    width: 150px;
+    height: 100%;
+    background-image: url('../img/sidebar-bg.png');
+    background-size: cover;
+    height: 100%;
+    background-color: #061e34;
+    color: #fff;
+    padding: 24px 26px;
+}
+
+#sidebar ul{
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+#sidebar span{
+    margin-left: 8px;
+}
+
+#dashboard-content{
+    width: calc(100vw - 150px);
+    overflow: auto;
+}
