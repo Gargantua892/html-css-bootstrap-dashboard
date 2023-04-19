@@ -24,12 +24,13 @@ input.form-control.me-2 {
 
 #sidebar{
     height: 100%;
-    width: 150px;
+    width: 70px;
     background-image: url('../img/sidebar-bg.png');
     background-size: cover;
     background-color: #061e34;
     color: #fff;
-    padding: 24px 26px;
+    padding: 8px;
+    transition: 0.3s;
 }
 
 #sidebar ul{
@@ -43,5 +44,69 @@ input.form-control.me-2 {
 }
 
 #dashboard-content{
-    width: calc(100vw - 150px);
+    width: calc(100vw - 70px);
+}
+
+.badge{
+    border-radius: 50px!important;
+}
+.custom_pill_color{
+    background-color: #165bba;
+    
+}
+
+.breadcrumb li:not(li:first-child){
+    margin-right: 4px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before{
+    content: "»"!important;
+    color: #fff!important;
+}
+
+.offcanvas_controller i{
+    font-size: 40px;
+}
+
+div#staticBackdrop{
+    min-width: 40%!important;
+}
+
+/* .class:before, .date:before, .roi:before, .my_badge:before, .icons:before{
+    position: absolute;
+    top: -46px;
+    left: 0;
+}
+
+.class:before{
+    content: "Nome";
+}
+
+.date:before{
+    content: "Data inizio";
+}
+
+.roi:before{
+    content: "ROI";
+}
+
+.my_badge:before{
+    content: "Stato";
+}
+
+.icons:before{
+    content: "Azioni";
+} */
+
+
+/* media query lg */
+@media only screen and (min-width: 992px){
+    #dashboard-content{
+        width: calc(100vw - 150px);
+    }
+
+    #sidebar{
+        height: 100%;
+        width: 150px;
+    }
 }
