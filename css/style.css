@@ -22,6 +22,10 @@ input.form-control.me-2 {
     background-color: lightgray;
 }
 
+header{
+    background-color: #f8f9fa;
+}
+
 #sidebar{
     height: 100%;
     width: 70px;
@@ -72,31 +76,7 @@ div#staticBackdrop{
     min-width: 40%!important;
 }
 
-/* .class:before, .date:before, .roi:before, .my_badge:before, .icons:before{
-    position: absolute;
-    top: -46px;
-    left: 0;
-}
 
-.class:before{
-    content: "Nome";
-}
-
-.date:before{
-    content: "Data inizio";
-}
-
-.roi:before{
-    content: "ROI";
-}
-
-.my_badge:before{
-    content: "Stato";
-}
-
-.icons:before{
-    content: "Azioni";
-} */
 
 
 /* media query lg */
@@ -109,4 +89,8 @@ div#staticBackdrop{
         height: 100%;
         width: 150px;
     }
+}
+
+.card th:not(th:first-child), .card td:not(td:first-child){
+    text-align: center;
 }

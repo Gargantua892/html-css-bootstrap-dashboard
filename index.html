@@ -1,400 +1,432 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- css -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css">
 
-    <!-- icone -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <!-- icone -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
 
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
-    <title>Bootstrap Dashboard</title>
+  <title>Bootstrap Dashboard</title>
 </head>
+
 <body>
-    <header>
-        <section class="bg-light">
-            <div class="d-flex align-items-center p-2 bg-white">
-                <div class="img-container">
-                    <img class="img-fluid" src="img/logo.svg" alt="">
-                </div>
-                <div class="nav-searchbar flex-grow-1 ps-3 ">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
-                      </form>
-                </div>
-                <div class="icon-container d-flex">
-                    <i class="bi bi-list-ul ps-3 d-none d-lg-block text-secondary"></i>
-                    <i class="bi bi-question-circle-fill d-none d-lg-block text-secondary"></i>
-                    <i class="bi bi-three-dots-vertical d-none d-lg-block text-secondary"></i>
-                    <i class="bi bi-bell-fill text-warning"></i>
-                </div>
+  <header>
+    <section class="">
+      <div class="d-flex align-items-center p-2">
+        <div class="img-container">
+          <img class="img-fluid" src="img/logo.svg" alt="">
+        </div>
+        <div class="nav-searchbar flex-grow-1 ps-3 ">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel"
+              aria-label="Search">
+          </form>
+        </div>
+        <div class="icon-container d-flex">
+          <i class="bi bi-list-ul ps-3 d-none d-lg-block text-secondary"></i>
+          <i class="bi bi-question-circle-fill d-none d-lg-block text-secondary"></i>
+          <i class="bi bi-three-dots-vertical d-none d-lg-block text-secondary"></i>
+          <i class="bi bi-bell-fill text-warning" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+          <!-- Modal dropdown -->
+          <div class="dropdown">
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+           <!-- Modal dropdown -->
+
+        </div>
+      </div>
+    </section>
+  </header>
+  <main class="d-flex">
+
+    <!-- Sidebar -->
+    <section id="sidebar">
+      <div class="sidebar-menu d-flex flex-column justify-content-between h-100">
+        <ul class="d-flex flex-column gap-3">
+          <li><i class="bi bi-house-fill"></i><span class="d-none d-lg-inline-block">House</span></li>
+          <li><i class="bi bi-bar-chart-fill"></i><span class="d-none d-lg-inline-block">Stats</span></li>
+          <li><i class="bi bi-reception-3"></i><span class="d-none d-lg-inline-block">Signals</span></li>
+        </ul>
+        <div class="icon text-center">
+          <i class="bi bi-gear-fill"></i><span class="d-none d-lg-inline-block">Admin</span>
+        </div>
+
+      </div>
+    </section>
+    <!-- / Sidebar -->
+
+    <section id="dashboard-content">
+      <div class="container-fluid bg-primary mb-3">
+
+        <!-- info panel -->
+        <div class="row p-2">
+          <div class="col-lg-6">
+            <h2 class="d-inline-block me-2 text-white">Boolean</h2><span class="badge custom_pill_color">Piano
+              blaze</span>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page"><span class="badge custom_pill_color">3
+                    app</span></li>
+                <li class="breadcrumb-item" aria-current="page"><span class="badge custom_pill_color">Boolean mobile
+                    app</span></li>
+                <li class="" aria-current="page"><span class="badge custom_pill_color">Boolean web app</span></li>
+                <li class="" aria-current="page"><span class="badge custom_pill_color">Boolean blog app</span></li>
+              </ol>
+            </nav>
+
+          </div>
+          <div class="col-lg-3 text-white">
+            <p>Studenti online negli ultimi 30 minuti</p>
+            <h3>125</h3>
+
+          </div>
+          <div class="col-lg-3 text-white">
+            <div class="offcanvas_controller d-flex align-items-center">
+              <p class="d-inline-block mb-0">Nuovo studente</p>
+              <!-- offcanvas menu -->
+              <i class="bi bi-plus-square mb-0 ms-4" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"></i>
             </div>
-        </section>
-    </header>
-    <main class="d-flex">
 
-        <!-- Sidebar -->
-        <section id="sidebar">
-            <div class="sidebar-menu d-flex flex-column justify-content-between h-100">
-                <ul class="d-flex flex-column gap-3">
-                    <li><i class="bi bi-house-fill"></i><span class="d-none d-lg-inline-block">House</span></li>
-                    <li><i class="bi bi-bar-chart-fill"></i><span class="d-none d-lg-inline-block">Stats</span></li>
-                    <li><i class="bi bi-reception-3"></i><span class="d-none d-lg-inline-block">Signals</span></li>
-                </ul>
-                <div class="icon text-center">
-                    <i class="bi bi-gear-fill"></i><span class="d-none d-lg-inline-block">Admin</span>
-                </div>
+            <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+              aria-labelledby="staticBackdropLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="staticBackdropLabel">Inserisci un nuovo studente</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
 
-            </div>
-        </section>
-         <!-- / Sidebar -->
-
-        <section id="dashboard-content">
-            <div class="container-fluid bg-primary mb-3">
-                
-                <!-- info panel -->
-                <div class="row p-2">
-                    <div class="col-lg-6">
-                        <h2 class="d-inline-block me-2 text-white">Boolean</h2><span class="badge custom_pill_color">Piano blaze</span>
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                              <li class="breadcrumb-item active" aria-current="page"><span class="badge custom_pill_color">3 app</span></li>
-                              <li class="breadcrumb-item" aria-current="page"><span class="badge custom_pill_color">Boolean mobile app</span></li>
-                              <li class="" aria-current="page"><span class="badge custom_pill_color">Boolean web app</span></li>
-                              <li class="" aria-current="page"><span class="badge custom_pill_color">Boolean blog app</span></li>
-                            </ol>
-                          </nav>
-
+              <!-- Contenuto offcanvas -->
+              <div class="offcanvas-body">
+                <form action="">
+                  <div class="row row-gap-4">
+                    <div class="col-6">
+                      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
                     </div>
-                    <div class="col-lg-3 text-white">
-                        <p>Studenti online negli ultimi 30 minuti</p>
-                        <h3>125</h3>
-
+                    <div class="col-6">
+                      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
                     </div>
-                    <div class="col-lg-3 text-white">
-                        <div class="offcanvas_controller d-flex align-items-center">
-                            <p class="d-inline-block mb-0">Nuovo studente</p>
-                            <!-- offcanvas menu -->
-                            <i class="bi bi-plus-square mb-0 ms-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"></i>
+                    <div class="col-6">
+                      <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping">@</span>
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Email"
+                          aria-describedby="addon-wrapping">
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <input type="text" class="form-control" placeholder="Password" aria-label="Password">
+                    </div>
+                    <div class="col-12">
+                      <input type="text" class="form-control" placeholder="Address" aria-label="Address">
+                    </div>
+                    <div class="col-6">
+                      <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid city.
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">State...</option>
+                        <option>...</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid state.
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid zip.
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <input class="form-control" type="file" id="formFile">
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                          Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                          You must agree before submitting.
                         </div>
-                    
-                          <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
-                            <div class="offcanvas-header">
-                              <h5 class="offcanvas-title" id="staticBackdropLabel">Inserisci un nuovo studente</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
-
-                            <!-- Contenuto offcanvas -->
-                            <div class="offcanvas-body">
-                                <form action="">
-                                    <div class="row row-gap-4">
-                                        <div class="col-6">
-                                          <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-                                        </div>
-                                        <div class="col-6">
-                                          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-                                        </div>
-                                        <div class="col-6">
-                                        <div class="input-group flex-nowrap">
-                                            <span class="input-group-text" id="addon-wrapping">@</span>
-                                            <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="addon-wrapping">
-                                        </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <input type="text" class="form-control" placeholder="Password" aria-label="Password">
-                                        </div>
-                                        <div class="col-12">
-                                            <input type="text" class="form-control" placeholder="Address" aria-label="Address">
-                                        </div>
-                                        <div class="col-6">
-                                            <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-                                            <div class="invalid-feedback">
-                                              Please provide a valid city.
-                                            </div>
-                                          </div>
-                                          <div class="col-3">
-                                            <select class="form-select" id="validationCustom04" required>
-                                              <option selected disabled value="">State...</option>
-                                              <option>...</option>
-                                            </select>
-                                            <div class="invalid-feedback">
-                                              Please select a valid state.
-                                            </div>
-                                          </div>
-                                          <div class="col-3">
-                                            <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
-                                            <div class="invalid-feedback">
-                                              Please provide a valid zip.
-                                            </div>
-                                          </div>
-                                          <div class="col-12">
-                                            <input class="form-control" type="file" id="formFile">
-                                          </div>
-                                          <div class="col-12">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                              <label class="form-check-label" for="invalidCheck">
-                                                Agree to terms and conditions
-                                              </label>
-                                              <div class="invalid-feedback">
-                                                You must agree before submitting.
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="col-12">
-                                            <button class="btn btn-primary me-2" type="submit">Salva</button>
-                                            <button class="btn btn-warning" type="submit">Svuota</button>
-                                          </div>
-
-                                      </div>
-                                </form>
-                            </div>
-                            <!-- / Contenuto offcanvas -->
-                          </div>
-
-                        <!-- Fine offcanvas menu -->
-
+                      </div>
                     </div>
-                </div>
-                <!-- Fine info panel -->
+                    <div class="col-12">
+                      <button class="btn btn-primary me-2" type="submit">Salva</button>
+                      <button class="btn btn-warning" type="submit">Svuota</button>
+                    </div>
+
+                  </div>
+                </form>
+              </div>
+              <!-- / Contenuto offcanvas -->
             </div>
-            <div class="container-fluid">
-                <!-- cards section -->
-                <div class="row row-gap-3">
-                    <div class="col-lg-8 d-flex flex-column row-gap-3">
 
-                        <!-- prossime classi -->
-                        <div class="card w-100" style="width: 18rem;">
-                            <div class="card-header mb-5">
-                              Prossime classi
-                            </div>
-                            <!-- Tabella -->
+            <!-- Fine offcanvas menu -->
 
-                            <!-- <div class="my_table">
-                                <div class="d-flex p-3">
-                                    <div class="p-2 flex-grow-1">Nome</div>
-                                    <div class="p-2">Data inizio</div>
-                                    <div class="p-2">ROI</div>
-                                    <div class="p-2">Stato</div>
-                                    <div class="p-2">Azioni</div>
-                                  </div>
-                            </div> -->
+          </div>
+        </div>
+        <!-- Fine info panel -->
+      </div>
+      <div class="container-fluid">
+        <!-- cards section -->
+        <div class="row row-gap-3">
+          <div class="col-lg-8 d-flex flex-column row-gap-3">
 
-                            <div class="my_table p-3">
-                                <div class="d-flex align-items-center p-1 border-top border-bottom border-secondary">
-                                    <div class="p-2 flex-grow-1">
-                                        <div class="d-flex align-items-center flex-grow-1 position-relative class">
-                                            <img src="img/class-avatar.jpg" width="36" alt=""><span class="ms-2">Classe 77</span>
-                                        </div>
-                                    </div>
-                                    <div class="p-2 position-relative date">15 Feb 2021</div>
-                                    <div class="p-2 position-relative roi">20%</div>
-                                    <div class="p-2 position-relative my_badge"><span class="badge rounded-pill text-bg-success">Success</span></div>
-                                    <div class="p-2 position-relative icons">
-                                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
-                                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-trash3-fill"></i></button>
-                                    </div>
-                                  </div>
-                                  <div class="d-flex align-items-center p-1 border-bottom border-secondary">
-                                    <div class="p-2 flex-grow-1">
-                                        <div class="d-flex align-items-center flex-grow-1">
-                                            <img src="img/class-avatar.jpg" width="36" alt=""><span class="ms-2">Classe 77</span>
-                                        </div>
-                                    </div>
-                                    <div class="p-2">15 Feb 2021</div>
-                                    <div class="p-2">20%</div>
-                                    <div class="p-2"><span class="badge rounded-pill text-bg-success">Success</span></div>
-                                    <div class="p-2">
-                                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
-                                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-trash3-fill"></i></button>
-                                    </div>
-                                  </div>
-                                  <div class="d-flex align-items-center p-1 border-bottom border-secondary">
-                                    <div class="p-2 flex-grow-1">
-                                        <div class="d-flex align-items-center flex-grow-1">
-                                            <img src="img/class-avatar.jpg" width="36" alt=""><span class="ms-2">Classe 77</span>
-                                        </div>
-                                    </div>
-                                    <div class="p-2">15 Feb 2021</div>
-                                    <div class="p-2">20%</div>
-                                    <div class="p-2"><span class="badge rounded-pill text-bg-success">Success</span></div>
-                                    <div class="p-2">
-                                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
-                                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-trash3-fill"></i></button>
-                                    </div>
-                                  </div>
-                                  <div class="d-flex align-items-center p-1 border-bottom border-secondary">
-                                    <div class="p-2 flex-grow-1">
-                                        <div class="d-flex align-items-center flex-grow-1">
-                                            <img src="img/class-avatar.jpg" width="36" alt=""><span class="ms-2">Classe 77</span>
-                                        </div>
-                                    </div>
-                                    <div class="p-2">15 Feb 2021</div>
-                                    <div class="p-2">20%</div>
-                                    <div class="p-2"><span class="badge rounded-pill text-bg-success">Success</span></div>
-                                    <div class="p-2">
-                                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
-                                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-trash3-fill"></i></button>
-                                    </div>
-                                  </div>
-                                  <div class="d-flex align-items-center p-1 border-bottom border-secondary">
-                                    <div class="p-2 flex-grow-1">
-                                        <div class="d-flex align-items-center flex-grow-1">
-                                            <img src="img/class-avatar.jpg" width="36" alt=""><span class="ms-2">Classe 77</span>
-                                        </div>
-                                    </div>
-                                    <div class="p-2">15 Feb 2021</div>
-                                    <div class="p-2">20%</div>
-                                    <div class="p-2"><span class="badge rounded-pill text-bg-success">Success</span></div>
-                                    <div class="p-2">
-                                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
-                                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-trash3-fill"></i></button>
-                                    </div>
-                                  </div>
-                                  <div class="d-flex align-items-center p-1 border-bottom border-secondary">
-                                    <div class="p-2 flex-grow-1">
-                                        <div class="d-flex align-items-center flex-grow-1">
-                                            <img src="img/class-avatar.jpg" width="36" alt=""><span class="ms-2">Classe 77</span>
-                                        </div>
-                                    </div>
-                                    <div class="p-2">15 Feb 2021</div>
-                                    <div class="p-2">20%</div>
-                                    <div class="p-2"><span class="badge rounded-pill text-bg-success">Success</span></div>
-                                    <div class="p-2">
-                                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
-                                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-trash3-fill"></i></button>
-                                    </div>
-                                  </div>
-                                  <div class="d-flex align-items-center p-1 border-bottom border-secondary">
-                                    <div class="p-2 flex-grow-1">
-                                        <div class="d-flex align-items-center flex-grow-1">
-                                            <img src="img/class-avatar.jpg" width="36" alt=""><span class="ms-2">Classe 77</span>
-                                        </div>
-                                    </div>
-                                    <div class="p-2">15 Feb 2021</div>
-                                    <div class="p-2">20%</div>
-                                    <div class="p-2"><span class="badge rounded-pill text-bg-success">Success</span></div>
-                                    <div class="p-2">
-                                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
-                                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-trash3-fill"></i></button>
-                                    </div>
-                                  </div>
-                                  <div class="d-flex align-items-center p-1 border-secondary">
-                                    <div class="p-2 flex-grow-1">
-                                        <div class="d-flex align-items-center flex-grow-1">
-                                            <img src="img/class-avatar.jpg" width="36" alt=""><span class="ms-2">Classe 77</span>
-                                        </div>
-                                    </div>
-                                    <div class="p-2">15 Feb 2021</div>
-                                    <div class="p-2">20%</div>
-                                    <div class="p-2"><span class="badge rounded-pill text-bg-success">Success</span></div>
-                                    <div class="p-2">
-                                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
-                                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-trash3-fill"></i></button>
-                                    </div>
-                                  </div>
-                            </div>
-                          </div>
-                          <!-- fine prossime classi -->
-                          
-                            <!-- FAQ -->
-                            <div class="card w-100" style="width: 18rem;">
-                                <div class="card-header">
-                               F.A.Q.
-                                </div>
-                                <div class="accordion accordion-flush p-3" id="accordionFlushExample">
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                          Accordion Item #1
-                                        </button>
-                                      </h2>
-                                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                                      </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                          Accordion Item #2
-                                        </button>
-                                      </h2>
-                                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                                      </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                          Accordion Item #3
-                                        </button>
-                                      </h2>
-                                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                                      </div>
-                                    </div>
-                                  </div>
-                            </div>
-                            <!-- fine FAQ -->
-                    </div>
-                    <div class="col-lg-4 d-flex flex-column row-gap-3">
+            <!-- prossime classi -->
+            <div class="card w-100 p-3" style="width: 18rem;">
+              <div class="card-header mb-2">
+                Prossime classi
+              </div>
 
-                        <!-- Todo -->
-                        <div class="card w-100" style="width: 18rem;">
-                            <div class="card-header">
-                              Todo
-                            </div>
-                            <ul class="list-group p-3">
-                                <li class="list-group-item">
-                                  <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
-                                  <label class="form-check-label stretched-link" for="firstCheckboxStretched">First checkbox</label>
-                                </li>
-                                <li class="list-group-item">
-                                  <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
-                                  <label class="form-check-label stretched-link" for="secondCheckboxStretched">Second checkbox</label>
-                                </li>
-                                <li class="list-group-item">
-                                  <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
-                                  <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Third checkbox</label>
-                                </li>
-                              </ul>
-                          </div>
-                          <!-- fine todo -->
+              <table class="table">
 
+                <!-- Header tabella -->
+                <thead>
+                  <tr class="d">
+                    <th scope="col" class="w-50">Nome</th>
+                    <th scope="col" class="d-none d-lg-table-cell">Data inizio</th>
+                    <th scope="col" class="d-none d-lg-table-cell">ROI</th>
+                    <th scope="col">Stato</th>
+                    <th scope="col">Azioni</th>
+                  </tr>
+                </thead>
+                <!-- / Header tabella -->
 
-                        <!-- charts -->
-                        <div class="card w-100" style="width: 18rem;">
-                            <ul class="list-group p-3">
-                                <li class="list-group-item"><img class="img-fluid" src="img/stats.jpeg" alt="">
-                                <h3>Testo</h3>
-                                <p>altro testo sotto</p></li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
-                                <li class="list-group-item">A fourth item</li>
-                                <li class="list-group-item">And a fifth one</li>
-                                <li class="list-group-item p-3"><a href="#">Link </a></li>
-                              </ul>
-                          </div>
-                          <!-- fine charts -->
+                <tbody>
 
-                    </div>
-                </div>
-                <!-- fine cards section -->
+                  <!-- Primo elemento tabella -->
+                  <tr>
+                    <td scope="row align-items-center">
+                      <div class="d-flex align-items-center">
+                        <img src="img/class-avatar.jpg" width="36" alt=""><span class="ms-2">Classe 77</span>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">15 Feb 2021</td>
+                    <td class="d-none d-lg-table-cell">20%</td>
+                    <td><span class="badge rounded-pill text-bg-success">Success</span></td>
+                    <td>
+                      <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
+                      <button type="button" class="btn btn-outline-secondary"><i class="bi bi-trash3-fill"></i></button>
+                    </td>
+                  </tr>
+                  <!-- Fine Primo elemento tabella -->
+
+                  <!-- Primo elemento tabella -->
+                  <tr>
+                    <td scope="row align-items-center">
+                      <div class="d-flex align-items-center">
+                        <img src="img/class-avatar.jpg" width="36" alt=""><span class="ms-2">Classe 77</span>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">15 Feb 2021</td>
+                    <td class="d-none d-lg-table-cell">20%</td>
+                    <td><span class="badge rounded-pill text-bg-success">Success</span></td>
+                    <td>
+                      <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
+                      <button type="button" class="btn btn-outline-secondary"><i class="bi bi-trash3-fill"></i></button>
+                    </td>
+                  </tr>
+                  <!-- Fine Primo elemento tabella -->
+
+                  <!-- Primo elemento tabella -->
+                  <tr>
+                    <td scope="row align-items-center">
+                      <div class="d-flex align-items-center">
+                        <img src="img/class-avatar.jpg" width="36" alt=""><span class="ms-2">Classe 77</span>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">15 Feb 2021</td>
+                    <td class="d-none d-lg-table-cell">20%</td>
+                    <td><span class="badge rounded-pill text-bg-success">Success</span></td>
+                    <td>
+                      <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
+                      <button type="button" class="btn btn-outline-secondary"><i class="bi bi-trash3-fill"></i></button>
+                    </td>
+                  </tr>
+                  <!-- Fine Primo elemento tabella -->
+
+                  <!-- Primo elemento tabella -->
+                  <tr>
+                    <td scope="row align-items-center">
+                      <div class="d-flex align-items-center">
+                        <img src="img/class-avatar.jpg" width="36" alt=""><span class="ms-2">Classe 77</span>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">15 Feb 2021</td>
+                    <td class="d-none d-lg-table-cell">20%</td>
+                    <td><span class="badge rounded-pill text-bg-success">Success</span></td>
+                    <td>
+                      <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
+                      <button type="button" class="btn btn-outline-secondary"><i class="bi bi-trash3-fill"></i></button>
+                    </td>
+                  </tr>
+                  <!-- Fine Primo elemento tabella -->
+
+                  <!-- Primo elemento tabella -->
+                  <tr>
+                    <td scope="row align-items-center">
+                      <div class="d-flex align-items-center">
+                        <img src="img/class-avatar.jpg" width="36" alt=""><span class="ms-2">Classe 77</span>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">15 Feb 2021</td>
+                    <td class="d-none d-lg-table-cell">20%</td>
+                    <td><span class="badge rounded-pill text-bg-success">Success</span></td>
+                    <td>
+                      <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
+                      <button type="button" class="btn btn-outline-secondary"><i class="bi bi-trash3-fill"></i></button>
+                    </td>
+                  </tr>
+                  <!-- Fine Primo elemento tabella -->
+
+                  <!-- Primo elemento tabella -->
+                  <tr>
+                    <td scope="row align-items-center">
+                      <div class="d-flex align-items-center">
+                        <img src="img/class-avatar.jpg" width="36" alt=""><span class="ms-2">Classe 77</span>
+                      </div>
+                    </td>
+                    <td class="d-none d-lg-table-cell">15 Feb 2021</td>
+                    <td class="d-none d-lg-table-cell">20%</td>
+                    <td><span class="badge rounded-pill text-bg-success">Success</span></td>
+                    <td>
+                      <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
+                      <button type="button" class="btn btn-outline-secondary"><i class="bi bi-trash3-fill"></i></button>
+                    </td>
+                  </tr>
+                  <!-- Fine Primo elemento tabella -->
+                </tbody>
+              </table>
             </div>
-        </section>
-    </main>
+            <!-- fine prossime classi -->
+
+            <!-- FAQ -->
+            <div class="card w-100" style="width: 18rem;">
+              <div class="card-header">
+                F.A.Q.
+              </div>
+              <div class="accordion accordion-flush p-3" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                      the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                      the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
+                      this being filled with some actual content.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                      the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just filling up the space to make it look, at
+                      least at first glance, a bit more representative of how this would look in a real-world
+                      application.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- fine FAQ -->
+          </div>
+          <div class="col-lg-4 d-flex flex-column row-gap-3">
+
+            <!-- Todo -->
+            <div class="card w-100" style="width: 18rem;">
+              <div class="card-header">
+                Todo
+              </div>
+              <ul class="list-group p-3">
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+                  <label class="form-check-label stretched-link" for="firstCheckboxStretched">First checkbox</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
+                  <label class="form-check-label stretched-link" for="secondCheckboxStretched">Second checkbox</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
+                  <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Third checkbox</label>
+                </li>
+              </ul>
+            </div>
+            <!-- fine todo -->
+
+
+            <!-- charts -->
+            <div class="card w-100" style="width: 18rem;">
+              <ul class="list-group p-3">
+                <li class="list-group-item"><img class="img-fluid" src="img/stats.jpeg" alt="">
+                  <h3>Testo</h3>
+                  <p>altro testo sotto</p>
+                </li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">A fourth item</li>
+                <li class="list-group-item">And a fifth one</li>
+                <li class="list-group-item p-3"><a href="#">Link </a></li>
+              </ul>
+            </div>
+            <!-- fine charts -->
+
+          </div>
+        </div>
+        <!-- fine cards section -->
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
