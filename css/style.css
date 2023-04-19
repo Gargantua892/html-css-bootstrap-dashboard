@@ -33,7 +33,7 @@ header{
     background-size: cover;
     background-color: #061e34;
     color: #fff;
-    padding: 8px;
+    padding:16px  8px;
     transition: 0.3s;
 }
 
@@ -41,6 +41,16 @@ header{
     list-style-type: none;
     margin: 0 auto;
     padding: 0px;
+}
+
+#sidebar ul li, #sidebar .icon{
+    padding: 4px 8px;
+}
+
+#sidebar ul li:hover, #sidebar .icon:hover{
+    background-color: aliceblue;
+    color: #061e34;
+    cursor: pointer;
 }
 
 #sidebar span{
@@ -73,7 +83,7 @@ header{
 }
 
 div#staticBackdrop{
-    min-width: 40%!important;
+    min-width: 100%!important;
 }
 
 
@@ -88,6 +98,10 @@ div#staticBackdrop{
     #sidebar{
         height: 100%;
         width: 150px;
+    }
+
+    div#staticBackdrop{
+        min-width: 40%!important;
     }
 }
 
